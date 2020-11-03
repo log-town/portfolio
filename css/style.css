@@ -1,0 +1,735 @@
+@charset-'uft-8';
+
+body{ font-family: 'Sen', sans-serif;  }
+
+
+
+
+
+	
+
+#intro{
+
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: white;
+	z-index: 5000;
+}
+
+
+
+
+.contact{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	z-index: 3000;
+
+}
+
+.contact .profile{
+
+
+	width: 1400px;
+	height: 800px;
+	position: absolute;
+	left: 250px; top: 100px;
+	background: #fff;
+	font-family: 'Nanum Pen Script', cursive;
+}
+
+.contact .profile h1{
+	text-align: center;
+	font-size: 60px;
+	
+
+}
+
+.contact .profile p{
+	font-size: 60px;
+	margin: 50px 0 0 100px;
+	position: relative;
+}
+
+.contact .profile:after{
+	content: '';
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	box-shadow: 8px 5px 5px black;
+	left: 900px; top: 200px;
+	background: url("../images/mymy.jpg")no-repeat center center;
+	background-size: cover;
+	border-radius: 100%;
+}
+
+.contact .profile .btn_exit{
+	position: absolute;
+	right: 50px; top: 30px;
+	background: none;
+	border:none;
+	font-size: 35px;
+	font-family: 'Nanum Pen Script', cursive;
+	cursor: pointer;
+	color: #000;
+
+}
+
+.contact .profile .btn_exit:hover{
+	
+	color: #b0b2ad;
+}
+
+.quick_btn_list{
+	position: fixed;
+	right: 60px; top: 350px;
+	z-index: 2000;
+
+
+}
+
+.quick_btn_list li{
+	
+	margin: 60px 0 0 0;
+	display: block;
+
+
+}
+
+.quick_btn_list li a{
+
+	display: block;
+	width: 100px;
+	height: 40px;
+	background: rgba(255,255,255,0.3);
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	color: #000;
+
+
+}
+
+.quick_btn_list li:last-child a{
+
+	width: 100px;
+	height: 50px;
+	background: url("../images/arrow_top.png")no-repeat 10% center;
+	background-size: 40px;
+	position: fixed;
+	right: 50px; bottom: 50px;
+	transition: all 1s ease;
+
+}
+
+.quick_btn_list li:last-child:hover a{
+	
+		transform: translateY(-30%);
+}
+
+.quick_btn_list li.on a{
+
+	background: rgba(255,255,255,1);
+	transition: all 1s ease;
+	transform: translateX(-30%);
+
+
+}
+
+.bg img{
+	
+	width: 100%;
+}
+
+
+#intro::before { 
+	content: ''; 
+	position: absolute; 
+	left: 0; top:-1000px;
+	background: #3a4941;
+	width: 900px;
+	height: 100%;
+	z-index: 4500;
+
+	animation: bar 1.5s ease;
+	animation-fill-mode: forwards;
+
+}
+
+	@keyframes bar { 100%{top:0px} }
+
+#intro h1 { 
+	color: black; 
+	position: absolute;
+	left:60%; top: 40%;
+	font-size: 70px;
+	font-family: 'Nanum Pen Script', cursive;
+	opacity: 0;
+	text-align: center;
+	animation: intro 1.5s 1.5s forwards;
+
+}
+	@keyframes intro { 100%{opacity: 1} }
+
+#intro .btn_next{ 
+	position: absolute; 
+	left: 73%; top: 65%;
+	border:none;
+	font-size: 40px;
+	font-family: 'Nanum Pen Script', cursive;
+	cursor: pointer;
+	
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 20px;
+	outline: none;
+	opacity: 0;
+
+	animation: btn_next 1s 2s forwards;
+}
+
+	@keyframes btn_next { 100% {opacity: 1} }
+
+#intro .btn_next:hover{
+	color: white;
+	background: #3a4941;
+}
+
+
+#page_1 div { float: left; }
+
+#page_1{
+	height: 1100px;
+	overflow: hidden;
+	border-top: 3px solid #b0b2ad;;
+
+}
+
+#page_1 .page_1_left{
+	width: 20%;
+	height: 1100px;
+	background: #364a41;
+	position: relative;
+}
+
+#page_1 .page_1_left h2{
+	margin: 150px 0 0 80px;
+}
+
+#page_1 .page_1_left h2 a{
+	font-family: 'Lobster', cursive;
+	font-weight: 500;
+	font-size: 35px;
+	color: #fff;
+
+}
+
+#page_1 .page_1_left .gnb{
+
+	position: absolute;
+	left: 100px; top: 300px;
+
+}
+
+#page_1 .page_1_left .gnb li{
+	margin: 50px 0 
+}
+
+#page_1 .page_1_left .gnb li a{
+
+	font-size: 40px;
+	color: #fff;
+	font-family: 'Lobster', cursive;
+
+}
+
+#page_1 .page_1_left .gnb li:hover a{
+	text-decoration: underline;
+
+}
+
+#page_1 .page_1_right{
+	width: 80%;
+	height: 1100px;
+	
+	background: url("../images/bg_cafe_2.jpeg")no-repeat center center;
+	background-size: cover;
+
+}
+
+#page_1 .page_1_right h2{
+	text-align: center;
+	margin: 200px 0 0 300px;
+}
+
+#page_1 .page_1_right h2 a{
+	font-family: 'Lobster', cursive;
+	font-size: 80px;
+	color: #fff;
+}
+
+
+
+#page_pc{
+	width: 100%;
+	height: 1000px;
+	background:url("../images/bg_cafe.jpeg")no-repeat center center fixed;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	border-top: 3px solid #b0b2ad;;
+
+	
+
+}
+
+#page_pc .pc_gnb_wrap { position: relative; }
+#page_pc .pc_gnb_wrap .pc_gnb { position: absolute; left: 150px; top: 0; }
+
+#page_pc .pc_gnb li { position: absolute; left: 0; top: 0;  }
+
+#page_pc .pc_gnb li:first-child{ left: 790px; top: 360px;  border-radius: 100%; }
+#page_pc .pc_gnb li:nth-child(2) { left: 1030px; top: 200px; border-radius:  100%; }
+#page_pc .pc_gnb li:nth-child(3) { left: 1040px; top: 510px; border-radius:  100%; }
+#page_pc .pc_gnb li:nth-child(4) { left: 780px; top: 650px; border-radius:  100%; }
+#page_pc .pc_gnb li:nth-child(5) { left: 530px; top: 500px; border-radius:  100%; }
+#page_pc .pc_gnb li:nth-child(6) { left: 520px; top: 240px; border-radius:  100%; }
+#page_pc .pc_gnb li:nth-child(7) { left: 760px; top: 80px; border-radius:  100%; }
+
+#page_pc .pc_gnb li:first-child a { 
+	background: url("../images/starbucks.jpg")no-repeat center 30px; 
+	background-size: 300px 180px;
+	box-shadow: 8px 5px 5px black;
+}
+
+#page_pc .pc_gnb li:nth-child(2) a { 
+	background: url("../images/hollys.jpg")no-repeat center center; 
+	background-size: cover;
+	box-shadow: 8px 5px 5px black;
+
+}
+
+#page_pc .pc_gnb li:nth-child(3) a { 
+	background: url("../images/podo.jpg")no-repeat center center; 
+	background-size: cover;
+	box-shadow: 8px 5px 5px black;
+
+}
+
+#page_pc .pc_gnb li:nth-child(4) a { 
+	background: url("../images/grunaru.png")no-repeat center center; 
+	background-size: cover;
+	box-shadow: 8px 5px 5px black;
+
+}
+
+#page_pc .pc_gnb li:nth-child(5) a { 
+	background: url("../images/canon.jpg")no-repeat center center; 
+	background-size: cover;
+	box-shadow: 8px 5px 5px black;
+
+}
+
+#page_pc .pc_gnb li:nth-child(6) a { 
+	background: url("../images/samyang.png")no-repeat center center; 
+	background-size: cover;
+	box-shadow: 8px 5px 5px black;
+
+}
+
+#page_pc .pc_gnb li:nth-child(7) a { 
+	background: url("../images/resportsac.jpg")no-repeat center center; 
+	background-size: cover;
+	box-shadow: 8px 5px 5px black;
+
+}
+
+
+#page_pc .pc_gnb li a{
+	display: block;
+	width: 300px;
+	height: 250px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	line-height: 250px;
+	position: relative;
+	background: #000;
+	border-radius: 100%;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+#page_pc .pc_gnb li a p{
+	opacity: 0;
+	position: absolute;
+	left: 0px; top: 0px;
+	width:  100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	font-size: 25px;
+	font-family: 'Nanum Pen Script', cursive;
+
+	transition: all 0.5s ease;
+
+}
+
+#page_pc .pc_gnb li a:hover p{
+	opacity: 1;
+}
+
+
+
+#page_pc .pc_gnb li a:after{
+
+	
+	display: none;
+	content: '_';
+	position: absolute;
+	left: 0; top: 0;
+
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	background: rgba(0,0,0,0.7);
+
+}
+
+.page_pc_left{
+
+	text-align: center;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	background: #364a41;
+
+
+
+}
+
+.page_pc_left h2{
+	margin-top: 400px;
+	font-size: 38px;
+	line-height: 50px;
+	color: #fff;
+	font-family: 'Nanum Pen Script', cursive;
+	padding: 20px 20px;
+}
+
+#page_mobile{
+	
+	width: 100%;
+	height: 1000px;
+	background: url("../images/bg_cafe_4.jpg")no-repeat center center fixed;
+	position: relative;
+	border-top: 3px solid #b0b2ad;;
+
+
+}
+
+#page_mobile .page_mobile_left{ 
+	
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	left: 0; top: 0;
+	background: #364a41;
+	text-align: center;
+
+
+ }
+
+ #page_mobile .page_mobile_left h2{
+	margin-top: 300px;
+	font-size: 30px;
+	line-height: 50px;
+	color: #fff;
+	font-family: 'Nanum Pen Script', cursive;
+	padding: 20px 20px;
+
+
+ }
+
+ #page_mobile .page_mobile_content{
+ }
+
+  #page_mobile .page_mobile_content li {
+
+
+ 	width: 360px;
+ 	height: 800px;
+	position: absolute;
+	opacity: 1;
+	transition: all 0.8s ease;
+	overflow: hidden;
+
+
+
+
+  }
+
+
+  #page_mobile .page_mobile_content li:first-child{ 
+  	left: 550px; top: 100px;  
+
+  	background: url("../images/bg_mobile.png")no-repeat center center; 
+	background-size: 375px 800px;
+
+	position: relative;
+
+
+
+  }
+  #page_mobile .page_mobile_content li:last-child{ 
+  	left: 1350px; top: 100px;  
+  	background: url("../images/bg_mobile.png")no-repeat center center; 
+	background-size: 375px 800px;
+
+  }
+
+  #page_mobile .page_mobile_content li:first-child a:after{
+  		content: '';
+  		display: block;
+  		position: absolute;
+  		left: 0; top: 0px;
+		width: 333px;
+		height: 640px;
+  		background: url("../images/bg_subway.png")no-repeat center center;
+  		background-size: 340px 640px;
+  }
+
+    #page_mobile .page_mobile_content li:last-child a:after{
+  		content: '';
+  		display: block;
+  		position: absolute;
+  		left: 0; top: 0px;
+		width: 333px;
+		height: 640px;
+  		background: url("../images/bg_cj.png")no-repeat center center;
+  		background-size: 340px 640px;
+  }
+
+  #page_mobile .page_mobile_content li a{
+	
+	display: block;
+	width: 333px;
+	height: 640px;
+	text-align: center;
+	font-size: 30px;
+	position: absolute;
+	left: 15px; top: 70px;
+	background: rgba(255,255,255,0.8);
+	position: relative;
+
+
+  }
+
+  #page_mobile .page_mobile_content li a p{
+  		position: absolute;
+  		position: relative;
+  		left: 0; top: 0;
+		width: 100%;
+		height: 100%;
+  		z-index: 1000;
+		background: #000;
+		
+
+		opacity: 0;
+		transition: all 0.8s ease;
+
+  }
+
+  #page_mobile .page_mobile_content li a p span{
+	  	position: absolute;
+	  	width: 100%;
+	  	height: 100%;
+	  	left: 0; top: 200px;
+	  	z-index: 1001;
+	  	font-size: 28px;
+		text-align: center;
+		line-height: 50px;
+
+		font-family: 'Nanum Pen Script', cursive;
+		color: #fff;
+		opacity: 0;
+
+  }
+
+  #page_mobile .page_mobile_content li a p span em{
+
+  	color: yellow;
+  	font-size: 45px;
+  }
+
+  #page_mobile .page_mobile_content li a p:hover span{
+  	
+  		opacity: 1;
+
+  }
+
+  #page_mobile .page_mobile_content li a:hover p
+  {
+  		opacity: 1;
+  }
+
+  #page_mobile .page_mobile_content li:hover{
+
+  		opacity: 0.8;
+  }
+
+
+
+
+#page_responsive{
+
+	width: 100%;
+	height: 1000px;
+	border-top: 3px solid #b0b2ad;
+	background: url("../images/bg_cafe_5.jpg")no-repeat center center fixed;
+	position: relative;
+}	
+
+#page_responsive .page_responsive_left{
+	position: absolute;
+	left: 0; top: 0;
+	width: 20%;
+	text-align: center;
+	height: 1000px;
+	background: #364a41;
+
+	
+}
+
+
+#page_responsive .page_responsive_left h2{
+	margin-top: 300px;
+	font-size: 30px;
+	line-height: 50px;
+	color: #fff;
+	font-family: 'Nanum Pen Script', cursive;
+	padding: 20px 20px;
+
+}
+
+#page_responsive .page_responsive_content .box{
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%;
+	height: 100%;
+
+	background: #000;
+	opacity: 0;
+	transition: all 0.8s ease;
+
+}
+
+#page_responsive .page_responsive_content:hover .box{
+	opacity: 0.7;
+}
+
+/*#page_responsive .page_responsive_content .btn_rs{
+	position: absolute;
+	left: 960px; top: 400px;
+	z-index: 999;
+	font-family: 'Nanum Pen Script', cursive;
+
+	width: 200px;
+	height: 200px;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 70px;
+
+	cursor: pointer;
+}*/
+
+#page_responsive .page_responsive_content .btn_rs:hover{
+	
+	color: yellow;
+
+}
+
+#page_responsive .page_responsive_content .responsive_link{ 
+		display: block;
+		position: relative; 
+}
+
+/*#page_responsive .page_responsive_content .responsive_link .arrows_left{
+	position: absolute;
+	left: 500px; top: 600px;
+	
+	width: 100px;
+	height: 100px;
+	background: url("../images/arrow_left.png")no-repeat center center;
+	background-size: 100px 100px;
+
+	animation: arrow_left 1.5s infinite;
+}
+
+	@keyframes arrow_left{ 100%{ left: 400px; } }
+
+
+#page_responsive .page_responsive_content .responsive_link .arrows_right{
+	position: absolute;
+	right: 150px; top: 600px;
+	
+	width: 100px;
+	height: 100px;
+	background: url("../images/arrow_right.png")no-repeat center center;
+	background-size: 100px 100px;	
+
+	animation: arrow_right 1.5s infinite;
+
+
+}
+
+	@keyframes arrow_right { 100%{ right: 0px; } }
+*/
+#page_responsive .page_responsive_content .responsive_link .page_responsive{
+	position: absolute;
+	left: 650px; top: 100px;
+
+	width: 800px;
+	height: 800px;
+	border-radius: 50%;
+	background: url("../images/bg_responsive.png")no-repeat center center;
+	background-size: cover;	
+}
+
+#page_responsive .page_responsive_content .responsive_link .page_responsive a{
+		display: block;
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.7);
+		border-radius: 50%;
+		opacity: 0;
+		transition: all 0.8s ease;
+
+}
+
+#page_responsive .page_responsive_content .responsive_link .page_responsive a p{
+		text-align: center;
+		line-height: 50px;
+		margin-top: 300px;
+		color: #fff;
+		font-family: 'Nanum Pen Script', cursive;
+		font-size: 40px;
+
+}
+
+#page_responsive .page_responsive_content .responsive_link .page_responsive a p span{
+	color: yellow;
+	font-size: 50px;
+}
+
+#page_responsive .page_responsive_content .responsive_link .page_responsive:hover a{ opacity: 1; }
+
+

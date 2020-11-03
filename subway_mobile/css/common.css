@@ -1,0 +1,162 @@
+/* 헤더와 푸터 */
+
+#header 
+{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	border-top: 3px solid #0e8c43;
+	border-bottom: 1px solid #e5e5e5;
+	z-index: 100;
+}
+
+#header .m_gps
+{
+	position: absolute;
+	left: 15px; top: 5px;
+}
+
+#header .m_gps img
+{
+	width: 22px;
+}
+
+#header h1
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#header h1 img
+{
+	width: 150px;
+}
+
+#header .m_btn
+{
+	position: absolute;
+	right: 15px; top: 15px;
+
+	width: 19px;
+	height: 19px;
+	background: url("../images/btn-3.png")no-repeat;
+	background-size: 19px;
+	text-indent: -9999px;
+	border: none;
+}
+
+.footer{
+		
+		background: #000;
+		height: 250px;
+} 
+
+
+.footer .footer_info
+{
+	text-align: center;
+	height: 50px;
+	border-bottom: 1px solid #3e3d3e;
+}
+
+.footer .footer_info li
+{
+	display: inline-block;
+	text-align: center;
+	padding: 0 6px;
+	position: relative;
+
+
+}
+
+.footer .footer_info li:before
+{
+	content: '';
+	position: absolute;
+	right: -2px; top: 20px;
+
+	width: 1px;
+	height: 10px;
+	background: #3e3d3e;
+
+}
+
+
+.footer .footer_info li:last-child:before
+{
+	background: none;
+}
+
+.footer .footer_info li a
+{
+	display: block;
+	color: #b7b5b7;
+	font-size: 10px;
+	line-height: 50px;
+}
+
+.footer .footer_info li:nth-child(2) a
+{
+	color: #fff;
+	font-weight: 700;
+}
+
+.footer  .sns
+{
+	text-align: center;
+	margin: 20px;
+}
+
+.footer  .sns a
+{
+	padding-right: 15px;
+}
+
+.footer  .sns img
+{
+	width: 35px;
+}
+
+.footer  address
+{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #6c6e6c;
+	font-size: 10px;
+	line-height: 15px;
+}
+
+.footer  p
+{
+	text-align: center;
+	padding: 0 10px;
+	color: #6c6e6c;
+	font-size: 10px;
+	line-height: 15px;
+}
+
+.section_3 .text{	
+	margin-bottom: 0;
+
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-size: 11px;
+}
+
+.section_3 .que
+{	margin: 0 auto;
+	display: block;
+	text-align: center;
+	width: 170px;
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+	font-weight: 800;
+	font-size: 18px;
+
+	background: #009223 url("../images/icon_arr_r02.png")no-repeat 145px center;
+	border-radius: 25px;
+}

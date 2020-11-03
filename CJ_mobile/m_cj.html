@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>CJ 모바일</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/f_cj.ico">
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/swiper.js"></script>
+</head>
+<body>
+		<header>
+			<button type="button" class="search">
+				
+			</button>
+
+			<h1>
+			<a href="#">
+				<img src="images/logo.png" alt="">
+			</a>
+			</h1>
+
+
+			<button type="button" class="btn_search">
+				검색
+			</button>
+
+			<!-- 모달 팝업 검색 -->
+
+			<div class="modal_search">
+				<div class="search_wrap">
+					<form action="">
+						<fieldset>
+							<legend>검색창</legend>
+								<input type="text" placeholder="찾으시는 검색어를 입력하세요.">
+								<button type="button" class="btn_reset">초기화버튼</button>
+								<button type="button" class="btn_search_2">검색버튼</button>
+						</fieldset>
+					</form>
+				</div> <!-- search_wrap -->
+
+				<dl class="recommend">
+					<dt>추천검색어</dt>
+					<dd>1+1 TV</dd>
+					<dd>WiFi</dd>
+					<dd>헬로 TV 시네마</dd>
+				</dl>
+		
+				<div class="modal_cover"></div>
+
+			</div> <!-- modal_search -->
+			
+			
+			<div class="mobile_cover"></div>
+		
+			<div class="mobile_menu">
+				<div class="top_menu">
+					<ul class="util">
+						<li><a href="javascript:;">로그인</a></li>
+						<li><a href="javascript:;">간편조회</a></li>
+						<li><a href="javascript:;">아이디/비밀번호 찾기</a></li>
+					</ul> <!-- util -->
+				<button type="button" class="m_close">버튼</button>
+
+				</div> <!-- top_menu -->
+					<div class="middle_menu">
+							<ul class="member">
+								<li><a href="javascript:;">개인</a></li>
+								<li><a href="javascript:;">Biz</a></li>
+							</ul>	
+					</div> <!-- middle_menu -->
+
+					<div class="bottom_menu">
+						<div class="tap_menu">
+							<ul>
+								<li><a href="javascript:;">상품</a></li>
+								<li><a href="javascript:;">SHOP</a></li>
+								<li><a href="javascript:;">이벤트/혜택</a></li>
+								<li><a href="javascript:;">고객센터</a></li>
+								<li><a href="javascript:;">My헬로</a></li>
+
+							</ul>
+								<a href="#" class="btn_calc">결합상품 계산기</a>	
+						</div> <!-- tap_menu -->
+
+						<div class="tap_list">
+							
+							<div class="all_list">
+								<a href="#" class="title">상품</a>
+
+									<ul class="con_menu">
+										<li><a href="javascript:;">TV
+											<ul class="depth2">
+												<li><a href="#">- 전체 요금제 보기</a></li>
+												<li><a href="#">- UHD Red</a></li>
+												<li><a href="#">- 디지털방송 HD</a></li>
+												<li><a href="#">- 헬로tv 플러스</a></li>
+												<li><a href="#">- 채널안내</a></li>
+												<li><a href="#">- 부가서비스</a></li>
+												<li><a href="#">- 헬로tv 모바일 App</a></li>
+											</ul>
+										</a></li>
+										<li><a href="javascript:;">VOD
+											<ul class="depth2">
+												<li><a href="#">- VOD 이용안내</a></li>
+												<li><a href="#">- 키즈전용관</a></li>
+												<li><a href="#">- 영화</a></li>
+												<li><a href="#">- 방송</a></li>
+												<li><a href="#">- 키즈</a></li>
+												<li><a href="#">- 애니</a></li>
+												<li><a href="#">- 월정액상품</a></li>
+											</ul>
+										</a></li>
+										<li><a href="javascript:;">인터넷
+											<ul class="depth2">
+												<li><a href="#">- 전체 요금제 보기</a></li>
+												<li><a href="#">- 기가인터넷</a></li>
+												<li><a href="#">- 초고속인터넷</a></li>
+												<li><a href="#">- WiFi</a></li>
+												<li><a href="#">- 부가서비스</a></li>
+											</ul>
+										</a></li>
+										<li><a href="javascript:;">전화
+											<ul class="depth2">
+												<li><a href="#">- 인터넷 전화</a></li>
+												<li><a href="#">- 국제전화</a></li>
+												<li><a href="#">- 부가서비스</a></li>
+											</ul>
+										</a></li>
+										<li><a href="javascript:;">결합상품
+											<ul class="depth2">
+												<li><a href="#">- 유선결합상품</a></li>
+												<li><a href="#">- 유무선결합상품</a></li>
+												<li><a href="#">- 초고속인터넷</a></li>
+												<li><a href="#">- 온가족케이블플랜(SKT)</a></li>
+												<li><a href="#">- 케이블 총액 결합할인(KT)</a></li>
+												<li><a href="#">- 참 쉬운 케이블 가족결합 <br> (LG U+)</a></li>
+											</ul>
+										</a></li>
+										<li><a href="javascript:;">CCTV
+											<ul class="depth2">
+												<li><a href="#">- 헬로 아이캠 </a></li>
+												<li><a href="#">- 헬로CCTV</a></li>
+												<li><a href="#">- 부가서비스</a></li>
+											</ul>
+										</a></li>
+										<li><a href="javascript:;">렌탈
+											<ul class="depth2">
+												<li><a href="#">- 추천</a></li>
+												<li><a href="#">- 영상/TV</a></li>
+												<li><a href="#">- 디지털</a></li>
+												<li><a href="#">- 주방</a></li>
+												<li><a href="#">- 생활</a></li>
+												<li><a href="#">- 계절</a></li>
+												<li><a href="#">- 건강</a></li>
+												<li><a href="#">- 기타</a></li>
+											</ul>
+										</a></li>
+									</ul> <!-- con_menu -->
+									
+							</div> <!-- all_list -->
+								
+							<div class="all_list all_list_2">
+								<a href="#" class="title">SHOP</a>
+
+									<ul class="con_menu con_menu_2">
+										<li><a href="javascript:;">TV</a></li>
+										<li><a href="javascript:;">VOD</a></li>
+										<li><a href="javascript:;">인터넷</a></li>
+										<li><a href="javascript:;">전화</a></li>
+										<li><a href="javascript:;">결합상품</a></li>
+										<li><a href="javascript:;">CCTV</a></li>
+										<li><a href="javascript:;">렌탈</a></li>
+									</ul> <!-- con_menu -->		
+							</div> <!-- all_list -->
+						
+							<div class="all_list all_list_3">
+								<a href="#" class="title">이벤트/혜택</a>
+
+									<ul class="con_menu con_menu_3">
+										<li><a href="javascript:;">기획전</a></li>
+										<li><a href="javascript:;">BEST 상품</a></li>
+										<li><a href="javascript:;">이유있는 제안</a></li>
+										<li><a href="javascript:;">헬로샵 Only</a></li>
+										<li><a href="javascript:;">why 헬로샵</a></li>
+										<li><a href="javascript:;">헬로 고객 이벤트</a></li>
+										
+									</ul> <!-- con_menu -->								
+							</div> <!-- all_list -->
+
+							<div class="all_list all_list_4">
+								<a href="#" class="title">고객센터</a>
+
+									<ul class="con_menu con_menu_3">
+										<li><a href="javascript:;">기획전</a></li>
+										<li><a href="javascript:;">BEST 상품</a></li>
+										<li><a href="javascript:;">이유있는 제안</a></li>
+										<li><a href="javascript:;">헬로샵 Only</a></li>
+										<li><a href="javascript:;">why 헬로샵</a></li>
+										<li><a href="javascript:;">헬로 고객 이벤트</a></li>
+										
+									</ul> <!-- con_menu -->								
+							</div> <!-- all_list -->
+
+							<div class="all_list all_list_5">
+								<a href="#" class="title">My헬로</a>
+
+									<ul class="con_menu con_menu_5">
+										<li><a href="javascript:;">기획전</a></li>
+										<li><a href="javascript:;">BEST 상품</a></li>
+										<li><a href="javascript:;">이유있는 제안</a></li>
+										<li><a href="javascript:;">헬로샵 Only</a></li>
+										<li><a href="javascript:;">why 헬로샵</a></li>
+										<li><a href="javascript:;">헬로 고객 이벤트</a></li>
+										
+									</ul> <!-- con_menu -->								
+							</div> <!-- all_list -->
+						
+						</div> <!-- tap_list -->
+					</div> <!-- bottom_menu -->
+			</div> <!-- mobile_menu 전체 -->
+
+		</header>
+
+		<div class="main">
+			<nav>
+				<ul>
+					<li><a href="#">상품</a></li>
+					<li><a href="#">SHOP</a></li>
+					<li><a href="#">이벤트/혜택</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+			</nav>
+
+		</div> <!-- main -->
+
+
+
+		
+
+<div class="slide">
+
+<div class="swiper-container">
+
+    <div class="swiper-wrapper">
+
+
+        <div class="swiper-slide">
+        	<a href="#">
+        		<img src="images/m1.png" alt="">
+        	</a>
+        </div>
+        <div class="swiper-slide">
+        	 <a href="#">
+        		<img src="images/m2.png" alt="">
+        	</a>
+        </div>
+        <div class="swiper-slide">
+        	 <a href="#">
+        		<img src="images/m3.png" alt="">
+        	</a>
+        </div>
+        <div class="swiper-slide">
+        	<a href="#">
+        		<img src="images/m4.png" alt="">
+        	</a>
+        </div>
+        <div class="swiper-slide">
+        	<a href="#">
+        		<img src="images/m5.png" alt="">
+        	</a>
+        </div>
+        <div class="swiper-slide">
+        	<a href="#">
+        		<img src="images/m6.png" alt="">
+        	</a>
+        </div>
+        <div class="swiper-slide">
+        	<a href="#">
+        		<img src="images/m7.png" alt="">
+        	</a>
+        </div>
+        <div class="swiper-slide">
+        	<a href="#">
+        		<img src="images/m8.png" alt="">
+        	</a>
+        </div>
+
+        
+    </div> <!-- swiper_wrapper -->
+
+    <div class="swiper-pagination"></div>
+
+
+
+
+	</div> <!-- container -->
+</div> <!-- slide -->
+
+<div class="section1">
+	<h2>고객님 어떤 상품을 찾으세요?</h2>
+
+	<ul class="section1_list">
+		<li><a href="#">TV</a></li>
+		<li><a href="#">인터넷</a></li>
+		<li><a href="#">결합상품</a></li>
+		<li><a href="#">특가상품</a></li>
+	</ul>
+</div>
+
+
+<div class="section2">
+	<h2>상품을 선택하세요</h2>
+	<p>결합을 하시면 더더욱 저렴하게 구입하실 수 있습니다.</p>
+
+
+		<div class="img_box">
+			<a href="javascript:;">
+				<img src="images/jojo.png" alt="">
+			</a>
+		</div>
+</div>
+
+<div class="section3">
+		<h2>이달의 헤택</h2>
+
+		<ul class="event">
+			<li>
+				<img src="images/01._ico-72-gift1.png" alt="">
+				<h3>최대 25만원 <br>현금 사은품</h3>
+				<p>상품에 따라 금액 상이</p>
+			</li>
+			<li>
+				<img src="images/02._ico-72-modem1.png" alt="">
+				<h3>인터넷 이용료<br>14만원 할인</h3>
+				<p>3년 약정 온라인 전용 할인</p>
+			</li>
+			<li>
+				<img src="images/03._ico-72-coupon1.png" alt="">
+				<h3>1만원 VOD 쿠폰</h3>
+				<p>방송상품 가입 시</p>
+			 
+			 </li>
+			<li>
+				<img src="images/CJhello_03_icon3.png" alt="">
+				<h3>설치비 4만원<br> 면제</h3>
+				<p>신규가입&자동이체 기준</p>
+
+			</li>
+		</ul>
+</div>
+
+<div class="section4">
+
+	<h2>가입가능지역을 조회해 보세요</h2>
+	<input type="text" placeholder="동/면/읍 입력해주세요">
+</div> <!-- section4 -->
+
+
+<div class="section5">
+	<h2>HELLO가 제안하는<br>LIFESTYLE!</h2>
+
+	<p>#<span>TV 2대를 1대 가격에 </span><span class="b">#인기상품 여기!</span></p>
+	<p>#<span>30일 품질 보장!</span><span class="a">#타사 반값!</span></p>
+	<p><span class="c">#지금 핫한 이벤트</span></p>
+	<p><span class="d">#이번주는 뭘까?</span></p>
+	<p>#<span class="e">헬로샵단독혜택</span> <span class="f">#활용Tip!</span> </p> 
+</div> <!-- section5 -->
+
+
+<footer>
+	<div class="f_section1">
+		<dl>
+			<dt><a href="javascirpt:;">고객센터</a></dt>
+			<dd><a href="javascirpt:;">온라인상담</a></dd>
+			<dd><a href="javascirpt:;">자주 찾는 질문</a></dd>
+			<dd><a href="javascirpt:;">이용안내</a></dd>
+		</dl>
+	</div>
+	<div class="f_section2">
+		<dl>
+			<dt><a href="javascirpt:;">공지사항</a></dt>
+			<dd><a href="javascirpt:;">01월 자동이체(신용카드)출금(승인)안내</a></dd>
+		</dl>
+	</div>
+	<div class="f_section3">
+		<ul>
+			<li><a href="javascript:;">회사소개</a></li>
+			<li><a href="javascript:;">지역방송</a></li>
+			<li><a href="javascript:;">헬로모바일다이렉트</a></li>
+			<li><a href="javascript:;">헬로렌탈</a></li>
+		</ul>
+	</div>
+
+	<div class="f_section4">
+		<h2><img src="images/logo-cjhello.png" alt=""></h2>
+			<ul>
+				<li> <span class="text_1">이용약관</span> l <span class="text_2">개인정보처리방침</span> </li>
+				<li>대표이사 송구영 l 개인정보 책임자 이건호</li>
+				<li>사업자 등록번호 117-81-13423</li>
+				<li>통신판매번호 2017-서울마포-0254</li>
+				<li>주소 서울특별시 마포구 월드컵북로 56길 19 상암디지털타워</li>
+				<li>고객행복센터 <span class="text_3">1855-1000</span></li>
+			</ul>			
+
+			<address>
+				Copyright © 2020 LG HelloVision All rights reserved.
+			</address>
+	</div>
+</footer>
+
+
+		<script>
+			$(function(){
+			var mySwiper = new Swiper ('.swiper-container', {
+		    // Optional parameters
+		  	autoplay:true,
+		    loop: true,
+
+			// If we need pagination
+			pagination: {
+			      el: '.swiper-pagination',
+			},
+
+
+  			});
+
+						var sw = true;	
+
+			$('.btn_search').click(function(){
+
+				$(this).toggleClass('on').next().slideToggle();
+				$('.modal_cover').hide();
+
+			});
+
+			$('input').keyup(function(){
+				$('.modal_cover').fadeIn();
+				$('.btn_reset').show();
+			});
+
+			$('.btn_reset').click(function(){
+				$('.modal_cover').hide();
+				$(this).fadeOut();
+				$('input').val('');
+
+			});
+
+			$('.search').click(function(){
+				$('header').addClass('on');
+				$('.mobile_cover').fadeIn(300);
+			});
+
+			$('.m_close').click(function(){
+				$('header').removeClass('on');
+				$('.mobile_cover').fadeOut(300);
+
+			});
+
+			$('.tap_menu li').click(function(){
+
+				$(this).addClass('on').siblings().removeClass('on');
+
+				var num = $(this).index();
+				console.log(num);
+				$('.bottom_menu .tap_list .all_list').eq(num).show().siblings().hide();
+
+
+			});
+
+			$('.con_menu li').click(function(){
+
+
+
+				if( sw == true ){
+					$(this).addClass('on');
+					sw = false;
+				}else{
+					$(this).removeClass('on');
+					sw = true ;
+
+
+				}
+
+			});
+
+			$('.con_menu>li>a').click(function(){
+				$(this).parent().toggleClass('on');
+				$(this).next().slideToggle();
+
+			
+
+			});
+
+
+
+
+
+
+
+			}); //건드리지마//
+		</script>
+
+
+</body>
+</html>
