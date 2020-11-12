@@ -1,6 +1,6 @@
 
 $(function(){
-
+	
 
 	$('.btn_skip').click(function(){
 
